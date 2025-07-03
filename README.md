@@ -15,15 +15,30 @@ Users can register and login securely. After successful login, the user receives
 
 ---
 ## Frontend setup
-Step 1: Go to client directory
+
+**Step 1: Go to client directory**
   cd client
   
-ste 2:choose language
+**step 2:choose language**
   npm init vite
   
-Step 3: Install dependencies
-  npm install
+**Step 3: Install dependencies**
+npm install
 
-Step 4: Start React app
+**Step 4: Start React app**
   npm run dev
+
+##Backend setup
+
+**1.navigate to server**
+cd server
+
+**2.Install Dependecies**
+npm install
+
+**3.create .env file**
+MONGO_URI=your_mongo_connection_string
+JWT_SECRET=your_secret_key
+**4.Start server**
+node index.js
 
