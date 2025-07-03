@@ -1,44 +1,37 @@
 # 🔐 MERN Stack Authentication App with JWT
 
-This project is a basic **MERN (MongoDB, Express, React, Node)** stack user authentication system with **JWT (JSON Web Token)**.
+A simple MERN (MongoDB, Express, React, Node) stack user authentication system using JWT (JSON Web Token).
 
-Users can register and login securely. After successful login, the user receives a JWT token stored in `localStorage`.
+Users can register and login securely. After login, the server returns a JWT token which is stored in the browser's `localStorage`.
 
 ---
 
 ## ⚙️ Technologies Used
 
-- **Frontend**: React, React Router, Axios,Vite
-- **Backend**: Node.js, Express.js, Mongoose
-- **Auth**: JWT (jsonwebtoken)
+- **Frontend**: React, React Router, Axios, Vite  
+- **Backend**: Node.js, Express.js, Mongoose  
+- **Authentication**: JWT (`jsonwebtoken`)  
 - **Database**: MongoDB Atlas
 
 ---
-## Frontend setup
 
-**Step 1: Go to client directory**
-  cd client
-  
-**step 2:choose language**
-  npm init vite
-  
-**Step 3: Install dependencies**
+## ⚙️ Setup Instructions
+
+```bash
+# Frontend Setup
+cd client
+npm init vite
 npm install
+npm run dev
 
-**Step 4: Start React app**
-  npm run dev
-
-##Backend setup
-
-**1.navigate to server**
+# Backend Setup
 cd server
-
-**2.Install Dependecies**
 npm install
 
-**3.create .env file**
-MONGO_URI=your_mongo_connection_string
-JWT_SECRET=your_secret_key
-**4.Start server**
-node index.js
+# Create .env file in server directory
+# and add the following:
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
 
+# Start Backend Server
+node index.js
