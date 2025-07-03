@@ -7,8 +7,8 @@ const app=express()
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect("mongodb+srv://hercules:17082003@cluster0.nkbpc0h.mongodb.net/employee?retryWrites=true&w=majority&appName=Cluster0").then(() => console.log("✅ MongoDB connected"))
-.catch((err) => console.log("❌ MongoDB connection error:", err));
+mongoose.connect("mongodb+srv://<dbuser>:<dbpass>cluster0.nkbpc0h.mongodb.net/employee?retryWrites=true&w=majority&appName=Cluster0").then(() => console.log(" MongoDB connected"))
+.catch((err) => console.log("MongoDB connection error:", err));
 app.post('/login',(req,res)=>{
     const {email,password}=req.body;
     EmployeeModel.findOne({email:email})
