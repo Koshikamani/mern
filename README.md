@@ -16,4 +16,27 @@ Users can register and login securely. After successful login, the user receives
 ---
 
 ## 📁 Project Structure
+project-root/
+├── client/ # React frontend
+│ └── src/
+│ ├── Signup.jsx
+│ ├── Login.jsx
+│ ├── Home.jsx
+│ ├── App.jsx
+│ └── main.jsx
+├── server/ # Express backend
+│ ├── models/
+│ │ └── employee.js
+│ ├── index.js
+│ └── .env
+└── README.md
+##frontend setup
+# Step 1: Go to client directory
+cd client
+
+# Step 2: Install dependencies
+npm install
+
+# Step 3: Start React app
+npm run dev
 
